@@ -29,17 +29,6 @@
 </style>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script src="meteoAjax.js"></script>
-<script>
-$(document).ready(function() {
-
-	$("button#meteo").click(function(){
-		ville = $("select#ville option:selected").val();
-		console.log('['+ville+']');
-		myAjax({"ville" : ville});
-	});
-
-});
-</script>
 
 </head>
 <body>
