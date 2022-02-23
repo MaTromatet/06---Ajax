@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<style>
+
+	body{
+		font-size:16px;
+	}
+	table#maTable{
+		width:600px;
+	}
+	table#maTable tr td,
+	table#maTable tr th{
+		border:1px solid blue;
+		height:20px;
+	}
+
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="premierAjaxv3.js"></script>
+
+<script>
+	var obj;
+$(document).ready(function() {
+
+	 
+
+
+
+
+		$("body > button:first-child").attr('disabled', false);
+	$("body > button:nth-child(2)").attr('disabled', true);
+	$("body > button:nth-child(3)").attr('disabled', true);
+    $("body > button:nth-child(4)").attr('disabled', true);
+	
+	
+	$("body > button:first-child").click(function(){
+		myAjax();
+		$("body > button:first-child").attr('disabled', true);
+		$("body > button:nth-child(2)").attr('disabled', false);
+		$("body > button:nth-child(3)").attr('disabled', true);
+        
+	});
+	
+	$('body > button:nth-child(2)').click(function(){
+		addTable(obj);
+		$("body > button:first-child").attr('disabled', true);
+		$("body > button:nth-child(2)").attr('disabled', true);
+		$("body > button:nth-child(3)").attr('disabled', false);
+       
+	});
+
+	$('body > button:nth-child(3)').click(function(){
+		calculer();
+		$("body > button:first-child").attr('disabled', true);
+		$("body > button:nth-child(2)").attr('disabled', true);
+		$("body > button:nth-child(3)").attr('disabled', true);
+		$("body > button:nth-child(4)").attr('disabled', false);
+	});
+	$('button:nth-child(4)').click(function(){
+		modifQte();
+		$("body > button:first-child").attr('disabled', true);
+		$("body > button:nth-child(2)").attr('disabled', true);
+		$("body > button:nth-child(3)").attr('disabled', true);
+		$("body > button:nth-child(4)").attr('disabled', true);
+	});
+
+
+		
+	});
+
+
+
+
+</script>
+
+</head>
+<body>
+	<button>ajax</button>
+	<button>creer table</button>
+	<button>calculer</button>
+	<button>qte</button>
+</body>
+
+</html>

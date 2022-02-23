@@ -1,0 +1,53 @@
+{
+	"id_table" : "maTable",
+	"titles":[
+	{
+				"css"	: {"width" : "20%", "text-align" : "center"},
+				"title"	: "Libellé"
+	},
+	{
+				"css"	: {"width" : "10%", "text-align" : "center"},
+				"title"	:"Prix U HT"
+	},
+	{
+				"css"	: {"width" : "15%", "text-align" : "center"},
+				"title"	:	"Qté"
+	},
+	{
+				"css"	: {"width" : "10%", "text-align" : "center"},
+				"title"	: "Taux TVA"
+	},
+	{
+				"css"	: {"width" : "15%", "text-align" : "center"},
+				"title"	: "Total HT"
+	},
+	{
+				"css"	: {"width" : "10%", "text-align" : "center"},
+				"title" : "TVA"
+	},
+	{
+				"css"	: {"width" : "auto", "text-align" : "center"},
+				"title"	: "Total TTC"
+	}],
+	
+	"items":[
+		{
+				"libelle"	:	"Souris PC 1",
+				"prixU"		:	10,
+				"qte"		:	2,
+				"tauxTVA"	:	0.20
+		},
+		{
+			"libelle"	:	"Souris PC 2",
+			"prixU"		:	12,
+			"qte"		:	3,
+			"tauxTVA"	:	0.20
+		},
+		{
+			"libelle"	:	"Souris PC 3",
+			"prixU"		:	14,
+			"qte"		:	1,
+			"tauxTVA"	:	0.20
+		}]
+	
+}
